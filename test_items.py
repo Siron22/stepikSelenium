@@ -11,4 +11,4 @@ def test_button__add_to_basket_is_present(browser):
     button = WebDriverWait(browser, 10).until(
         EC.presence_of_element_located((By.CLASS_NAME, "btn-add-to-basket")))
     assert button
-    time.sleep(5)
+
