@@ -1,5 +1,10 @@
+from selenium.webdriver.common.by import By
 from .base_page import BasePage
-from .locators import LoginPageLocators
+
+
+class LoginPageLocators:
+    FORM_LOGIN = (By.CSS_SELECTOR, "#login_form")
+    FORM_REGISTRATION = (By.CSS_SELECTOR, "#register_form")
 
 class LoginPage(BasePage):
     def should_be_login_page(self):
