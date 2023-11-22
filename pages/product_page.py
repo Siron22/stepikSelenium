@@ -14,7 +14,7 @@ class ItemPageLocators:
     ALERT_NAME = (By.XPATH, "//div[1]/div[1]/strong")
 
 
-class ItemPage(BasePage):
+class ProductPage(BasePage):
 
     def add_item_into_basket(self):
         add_button = self.browser.find_element(*ItemPageLocators.BUTTON_ADD_TO_BASKET)
